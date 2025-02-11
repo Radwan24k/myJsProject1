@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container-img {
+    width: 100vw;
+    height: 65vh;
+    position: relative;
+}
+
+img {
+    width: 100vw;
+    height: 95%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Shift back to center */
+    text-align: center;
+    h1 {
+        color: #D3E10E;
+    }
+    p {
+        color: #F9F9F9;
+    }
+}
+
+.container-form-title {
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    direction: rtl;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.form {
+    display: flex;
+    flex-direction: row; /* Arrange elements in a row */
+    align-items: center; /* Center items vertically */
+    width: 60%; /* Width of the form */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    flex: 1; /* Equal flex basis for inputs */
+}
+
+.label {
+    font: normal normal bold 16px/21px Assistant;
+    color: #011560;
+}
+
+.input {
+    width: 100%;
+    background-color: #F6F6F6;
+    height: 40px;
+    border: 0;
+    border-bottom: 5px solid #D3E10E;
+}
+
+.button {
+    cursor: pointer;
+    height: 45px;
+    background-color: #D3E10E;
+    color: #011560;
+    letter-spacing: 0.33px;
+    margin: 20px;
+    margin-top: 40px;
+    border: 0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button:hover {
+    border: 1px solid #D3E10E;
+    background-color: #FFFFFF;
+    color: #D3E10E;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .text-overlay h1 {
+        font-size: 24px; /* Adjust for smaller screens */
+    }
+    .text-overlay p {
+        font-size: 14px; /* Adjust for smaller screens */
+    }
+
+    .container-img {
+        width: 100vw;
+        height: 50vh;
+        position: relative;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column; /* Arrange elements in a row */
+        width: 90vw; /* Width of the form */
+    }
+    .input-container {
+        margin: 10px;
+    }
+    .button{
+        width: 90%;
+    }
+    .input{
+        width: 80vw;
+        background-color: #E5EEFF;
+    }
+}

@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;}
+
+/* Main container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: auto;
+    direction: rtl;
+    margin: 0 auto;
+}
+
+.container-img {
+    width: 30%;
+    height: auto;
+}
+
+.container-img img {
+    width: 100%;
+    /* Make image take full width of its container */
+    height: auto;
+    object-fit: cover;
+    /* This ensures the image covers the container properly */
+}
+
+.form-container {
+    width: 70%;
+    height: auto;
+    padding-right: 90px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.p-h {
+    margin-bottom: 15px;
+    width: 370px;
+}
+
+h1 {
+    font: normal normal 900 66px/97px Heebo;
+    color: #FDBD03;
+}
+
+p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #020253;
+}
+
+.row-input {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* width: 48%; */
+}
+
+#name,
+#email {
+    width: 258px;
+    height: 30px;
+    padding: 5px;
+}
+
+.input-all {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+label {
+    font: normal normal bold 16px/24px Heebo;
+    color: #2C2C2C;
+    margin-bottom: 5px;
+}
+
+.input-all input {
+    background-color: #E5EEFF;
+    border: 0;
+    border-bottom: 3px solid #FDBD03;
+}
+
+textarea {
+    background-color: #E5EEFF;
+    border: 0;
+    border-bottom: 3px solid #FDBD03;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    background-color: #FDBD03;
+    border: 0;
+    color: #000;
+    font: normal normal bold 22px/30px Heebo;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    /* border: 1px solid #FDBD03; */
+    background-color: #000;
+    color: #FDBD03;
+}
+
+.container-icons {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: flex-start;
+    /* Align items to the left */
+    position: relative;
+    /* Position relative for absolute children */
+    height: 100vh;
+    /* Full height of the viewport */
+    padding: 20px;
+    /* Add some padding */
+}
+
+.top-icon {
+    margin-bottom: auto;
+    /* Push the icons to the top */
+}
+
+.social-icons {
+    display: flex;
+    /* Align icons in a row */
+    align-items: center;
+    margin-bottom: 0;
+    /* margin-left: 10px; */
+    /* Space above the yellow line */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-icons a {
+    color: #FDBD03;
+    /* Icon color */
+    font-size: 24px;
+    /* Icon size */
+    text-decoration: none;
+    /* Remove underline */
+    margin: 17px;
+    /* Space between icons */
+
+}
+
+.yellow-line2 {
+    width: 70%;
+    height: 10px;
+    background-color: #FDBD03;
+    /* Yellow color */
+    position: absolute;
+    /* Position it separate from the icons */
+    bottom: 0;
+    /* Align to the bottom */
+    left: 0;
+    /* Align to the left */
+}
+
+.yellow-line1 {
+    height: 10px;
+    /* Height of the horizontal line */
+    width: 20%;
+    /* Width set to 20% of the viewport */
+    background-color: #FDBD03;
+    /* Yellow color */
+    position: absolute;
+    /* Position it separately */
+    top: 0;
+    /* Align to the top */
+    right: 0;
+    /* Align to the right */
+}
+
+.fa-brands,
+.fa-solid {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #FDBD03;
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.fa-brands:hover,
+.fa-solid:hover {
+    background-color: #000;
+    color: #FDBD03;
+}
+
+
+@media (max-width: 576px) {
+    .top-icon {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container-img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
+    img {
+        margin-top: 30px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding-right: 0;
+        align-items: center;
+        margin-top: 180px;
+    }
+
+    .p-h {
+        width: 100%;
+        text-align: center;
+    }
+
+    .row-input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #name,
+    #email {
+        width: 100%;
+    }
+
+    .input-all {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container-icons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .yellow-line1 {
+        width: 80%;
+        top: 0;
+        right: 0;
+    }
+
+    .yellow-line2 {
+        width: 100%;
+        bottom: 0;
+    }
+
+    .form-control {
+        width: 80vw;
+        margin-bottom: 60px;
+    }
+}
+
+/* 
+@media (max-width: 576px) {
+    .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+
+    .container-img {
+    width: 80%;
+    margin-bottom: 20px;
+    }
+
+    .form-container {
+    width: 80%;
+    padding-right: 0;
+    align-items: center;
+    }
+
+    .p-h {
+    width: 100%;
+    text-align: center;
+    }
+
+    .row-input {
+    flex-direction: column;
+    width: 100%;
+    }
+
+    #name,
+    #email {
+    width: 100%;
+    }
+
+    .input-all {
+    width: 100%;
+    }
+
+    button {
+    width: 100%;
+    margin-top: 20px;
+    }
+
+    .container-icons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    }
+
+    .social-icons {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .yellow-line1 {
+    width: 80%;
+    top: 0;
+    right: 0;
+    }
+
+    .yellow-line2 {
+    width: 100%;
+    bottom: 0;
+    }
+    } */

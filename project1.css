@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+}
+
+.title {
+    margin: 0;
+    font: normal normal normal 80px/1.2 Satisfy;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+}
+
+.subtitle {
+    margin: 20px 0;
+    font: normal normal normal 24px/1.2 'Varela Round';
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.description {
+    margin: 20px 0;
+    font: normal normal normal 16px/1.5 'Varela Round';
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    max-width: 800px;
+}
+
+.form {
+    display: flex;
+    justify-content: center; /* Center the inputs and button */
+    align-items: end;
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align labels to the right */
+    margin: 0 10px; /* Space between inputs */
+}
+
+.label {
+    font: normal normal normal 12px/1.2 'Varela Round'; /* Smaller label font */
+    color: #F9F9F9;
+    margin-bottom: 5px; /* Space between label and input */
+    margin: 0 10px;
+}
+
+.input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font: normal normal normal 16px/20px 'Varela Round';
+    color: #F9F9F9;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #FFFFFF;
+    color: #0D99FF;
+    font: normal normal normal 16px/20px 'Varela Round';
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 120px;
+    height: 40px;
+    margin-left: 10px; /* Space between button and inputs */
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .title {
+        font-size: 50px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .description {
+        font-size: 14px;
+        max-width: 90%;
+        margin: 0 auto; 
+    }
+    .form {
+        flex-direction: column-reverse; /* Stack elements vertically */
+        align-items: center;    /* Center the items */
+    }   
+    .input, .button { 
+        width: 90%;             /* Full width for inputs and button */
+        margin: 5px;        /* Vertical spacing */
+    }
+    .input-container {
+        width: 95%;
+        margin: 5px 0;
+        margin-right: 2.5%;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@100..900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="project5.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- 16 Image Cells -->
+        <div class="grid-item"><img src="images/1-1.png" alt="Image 1"></div>
+        <div class="grid-item"><img src="images/1-2.png" alt="Image 2"></div>
+        <div class="grid-item"><img src="images/2-1.png" alt="Image 3"></div>
+        <div class="grid-item"><img src="images/2-2.png" alt="Image 4"></div>
+        <div class="grid-item"><img src="images/3-1.png" alt="Image 5"></div>
+        <div class="grid-item"><img src="images/3-2.png" alt="Image 6"></div>
+        <div class="grid-item"><img src="images/3-3.png" alt="Image 7"></div>
+        <div class="grid-item"><img src="images/3-4.png" alt="Image 8"></div>
+        <div class="grid-item"><img src="images/4-3.png" alt="Image 9"></div>
+        <div class="grid-item"><img src="images/4-4.png" alt="Image 10"></div>
+        <div class="grid-item"><img src="images/5-3.png" alt="Image 11"></div>
+        <div class="grid-item"><img src="images/5-4.png" alt="Image 12"></div>
+        <div class="grid-item"><img src="images/6-3.png" alt="Image 13"></div>
+        <div class="grid-item"><img src="images/6-4.png" alt="Image 14"></div>
+        <!-- Container 1 -->
+        <div class="container1 grid-item">
+            <h1>לגלות את העולם</h1>
+            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+        </div>
+
+        <!-- Container 2 -->
+        <div class="container2 grid-item">
+            <div class="container-form-title">
+                <h1>ספרו לנו על החוויה שלכם</h1>
+                <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+                <form class="form">
+                    <div class="input-container">
+                        <label class="label">שם</label>
+                        <input type="text" class="input" required>
+                    </div>
+                    <div class="input-container">
+                        <label class="label">דוא"ל</label>
+                        <input type="email" class="input" required>
+                    </div>
+                    <div class="input-container">
+                        <label class="label" for="experience">שתף את הניסיון שלך</label>
+                        <textarea id="experience" class="input input-experience" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="button">שליחה</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

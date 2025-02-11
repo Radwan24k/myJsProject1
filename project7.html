@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Page</title>
+    <link rel="stylesheet" href="project7.css">
+    <script src="test.js"></script>
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("phS4AmJzH6zteums2"); // Replace with your EmailJS user ID
+        })();
+    </script> -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "phS4AmJzH6zteums2",
+            });
+        })();
+    </script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span class="student-name">Radwan K</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="title">Welcome to the Special Page</h1>
+            <p class="subtitle">A unique experience awaits you</p>
+            <p class="description">This page showcases a different style and special features to make it stand out.
+                Enjoy the interactive elements and the modern design.</p>
+        </section>
+
+        <section class="form-section">
+            <form class="form" id="contact-form">
+                <input type="text" class="input" id="name" placeholder="Your Name" name="user_name" required>
+                <input type="email" class="input" id="email" placeholder="Your Email" name="user_email" required>
+                <button type="submit" class="button" onclick="sendMail()">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Radwan K. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            emailjs.sendForm('service_zwmcj58', 'template_lccl30n', this)
+                .then(function () {
+                    alert('Email sent successfully!, Well Contact You Soon');
+                }, function (error) {
+                    alert('Failed to send email. Error: ' + JSON.stringify(error));
+                });
+        });
+
+    </script>
+</body>
+
+</html>
