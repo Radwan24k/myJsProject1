@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+header {
+    background-color: #1e88e5;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.student-name {
+    color: #fff;
+}
+
+header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+main {
+    margin-top: 6rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.download-buttons {
+    margin-top: 1rem;
+}
+
+.download-buttons .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #1e88e5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 0.5rem;
+}
+
+.download-buttons .button:hover {
+    background-color: #1565c0;
+}
+
+.technologies-used {
+    margin-bottom: 2rem;
+}
+
+.tech-icons img {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    width: 97%;
+    margin: 1% 0;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    direction: ltr;
+    gap: 40px;
+}
+
+.project {
+    display: flex; /* Use flexbox for easy layout */
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Space between image and text */
+    padding: 20px;
+}
+
+.project-image {
+    flex: 0 0 300px; /* Fixed width for the image container */
+    height: 300px; /* Fixed height for the image container */
+}
+
+.project-image img {
+    width: 100%; /* Ensure the image covers the full width of the container */
+    height: 100%; /* Ensure the image covers the full height of the container */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.text-buttons {
+    flex: 1; /* Text and buttons take up remaining space */
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+    align-items: flex-start;
+}
+
+.text-buttons h1 {
+    margin-bottom: 10px;
+}
+
+.text-buttons p {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.5;
+    width: 60%;
+}
+
+.text-buttons button {
+    margin-right: 10px;
+    /* add any additional styles */
+}
+
+footer {
+    background-color: #1565c0;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-media {
+    margin: 1rem 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+    }
+
+    .download-buttons .button {
+        padding: 0.5rem 1rem;
+        margin: 0 0.25rem;
+        margin-top: 0.5rem;
+    }
+
+    .tech-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .project-image {
+        flex: 0 0 200px;
+        height: 200px;
+    }
+
+    .project-image img {
+        object-fit: contain;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text-buttons h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-buttons p {
+        width: 100%;
+    }
+
+    .text-buttons {
+        align-items: center;
+
+    }
+}

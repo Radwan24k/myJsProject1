@@ -199,7 +199,7 @@ function gameStart() {
     createFood();
     drawFood();
     nextTick();
-  }, 3000); // Wait for 3 seconds before starting the game
+  }, 1000); // Wait for 3 seconds before starting the game
 }
 
 function nextTick() {

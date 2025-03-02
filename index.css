@@ -171,6 +171,53 @@ header .logo a {
     border-radius: 10px;
 }
 
+#play-center {
+    text-align: center;
+    padding: 30px 20px; /* Increased padding for more space */
+    background-color: #e0f7fa; /* Light background color */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    margin: 60px 0; /* Increased margin for more space between sections */
+}
+
+#play-center h2 {
+    color: #1565c0;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.play-center-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.play-center-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+}
+
+.play-center-card:hover {
+    transform: scale(1.05);
+}
+
+.play-center-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.play-center-card h3 {
+    color: #1565c0;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
 footer {
     background-color: #1565c0;
     color: #fff;
@@ -226,6 +273,9 @@ button {
 button:hover {
     background-color: #1565c0;
 }
+
+
+
 
 @media (max-width: 576px) {
     .container {
