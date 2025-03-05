@@ -1,19 +1,43 @@
-.cell{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
-    cursor: pointer;
-    }
-    #gameContainer{
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#gameContainer {
     font-family: "Permanent Marker", cursive;
     text-align: center;
-    }
-    #cellContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+#cellContainer {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 225px;
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
     margin: auto;
-    }
+}
+
+.cell {
+    width: 100px; /* Increased width */
+    height: 100px; /* Increased height */
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 100px; /* Adjusted line height */
+    font-size: 60px; /* Increased font size */
+    cursor: pointer;
+}
+
+#restartBtn {
+    font-family: "Permanent Marker", cursive;
+    font-size: 18px; /* Adjusted font size to fit text */
+    padding: 10px 20px; /* Adjusted padding for better fit */
+    border: 4px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px; /* Add margin to separate buttons */
+}

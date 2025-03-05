@@ -1,6 +1,17 @@
-#gameContainer{
+h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 50px;
     text-align: center;
-    }
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px; /* Add margin to push the container down */
+}
 
 #gameBoard{
     border: 3px solid;
@@ -22,4 +33,29 @@
     } 
 
 
-    
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #gameContainer {
+        width: 100vw; /* Full width for smaller screens */
+    }
+
+    #gameBoard {
+        
+        width: 100vw; /* Full width for smaller screens */
+        height: 100vw; /* Maintain aspect ratio */
+    }
+
+    #scoreText {
+        font-size: 10vw; /* Larger font size for smaller screens */
+    }
+
+    #resetBtn {
+        font-size: 8vw; /* Larger font size for smaller screens */
+        width: 28vw; /* Larger width for smaller screens */
+        height: 15vw; /* Larger height for smaller screens */
+    }
+}

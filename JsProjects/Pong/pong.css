@@ -1,0 +1,74 @@
+h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+#gameContainer {
+    text-align: center;
+}
+
+#gameBoard {
+    border: 3px solid;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+#scoreText {
+    font-family: "consolas", monospace;
+    font-size: 100px;
+}
+
+button {
+    font-family: "Permanent Marker", cursive;
+    font-size: 18px; /* Adjusted font size to fit text */
+    padding: 10px 20px; /* Adjusted padding for better fit */
+    border: 4px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px; /* Add margin to separate buttons */
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    margin-top: 20px;
+}
+
+#resetBtn {
+    display: block;
+    margin: 20px auto; /* Center the reset button and add margin */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #scoreText {
+        font-size: 80px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #scoreText {
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

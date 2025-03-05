@@ -60,6 +60,41 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e88e5;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 6px;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #1565c0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1565c0;
+}
+
 
 header .logo {
     display: flex;
@@ -74,8 +109,28 @@ header .logo a {
     padding: 10px;
 }
 
+/* Scroll to top button styles */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #1565c0;
+}
+
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #ffffff;
@@ -188,7 +243,7 @@ header .logo a {
 
 .play-center-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -208,14 +263,16 @@ header .logo a {
 
 .play-center-card img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    object-fit: contain;
     border-radius: 10px;
 }
 
 .play-center-card h3 {
     color: #1565c0;
     font-size: 24px;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 footer {
@@ -279,7 +336,7 @@ button:hover {
 
 @media (max-width: 576px) {
     .container {
-        width: 95%;
+        width: 90%;
         padding: 1rem;
     }
 
