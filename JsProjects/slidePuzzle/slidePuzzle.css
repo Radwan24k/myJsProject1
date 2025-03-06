@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bgcol: #37474F;
+    --mcol0: #29B6F6;
+    --mcol1: #2196F3;
+    --mcol2: #1976D2;
+    --txtcol0: #90A4AE;
+    --txtcol1: #607D8B;
+    --whitecol: #ECEFF1;
+    --darkcol: #263238;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    background-color: var(--bgcol);
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 4vw; /* Responsive font size */
+    text-align: center;
+    color: var(--mcol0);
+    margin-bottom: 3vw;
+}
+
+#puzzle_container {
+    gap: 0;
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    background-color: var(--darkcol);
+    border-radius: 8px;
+    border: 1px solid var(--mcol0);
+    box-shadow: 0px 8px 0px var(--mcol0);
+}
+
+.puzzle_block {
+    gap: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33.4%;
+    height: 33.4%;
+    background-color: var(--txtcol1);
+    color: var(--whitecol);
+    font-size: 10vh;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition: left 0.3s, top 0.3s;
+}
+
+/* Difficulty container */
+#difficulty_container {
+    display: flex;
+    flex-direction: row;
+    width: 50vh;
+    height: 10vh;
+    background-color: var(--darkcol);
+    border-radius: 8px;
+    margin-top: 22px;
+}
+
+.difficulty_button {
+    flex-grow: 1;
+    background-color: inherit;
+    color: var(--mcol2);
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    padding-top: 5%;
+    margin: 4px;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+.difficulty_button:hover {
+    opacity: 0.8;
+    font-size: 3.5vh;
+}
+
+.difficulty_button.active {
+    background-color: inherit;
+    color: var(--mcol0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw; /* Larger font size for smaller screens */
+    }
+
+    #puzzle_container {
+        width: 70vw; /* Adjust width for smaller screens */
+        height: 70vw; /* Adjust height for smaller screens */
+    }
+
+    .puzzle_block {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+
+    #difficulty_container {
+        width: 70vw; /* Adjust width for smaller screens */
+        height: 15vw; /* Adjust height for smaller screens */
+    }
+
+    .difficulty_button {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+
+    .difficulty_button:hover {
+        font-size: 4.5vw; /* Adjust hover font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 10vw; /* Larger font size for smaller screens */
+    }
+
+    #puzzle_container {
+        width: 90vw; /* Adjust width for smaller screens */
+        height: 90vw; /* Adjust height for smaller screens */
+    }
+
+    .puzzle_block {
+        gap: 0;
+        font-size: 12vw; /* Adjust font size for smaller screens */
+    }
+
+    #difficulty_container {
+        width: 90vw; /* Adjust width for smaller screens */
+        height: 20vw; /* Adjust height for smaller screens */
+    }
+
+    .difficulty_button {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+
+    .difficulty_button:hover {
+        font-size: 5.5vw; /* Adjust hover font size for smaller screens */
+    }
+}
